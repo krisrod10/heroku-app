@@ -1,0 +1,13 @@
+{
+    "name": "heroku-app",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "mysql": "^2.18.1",
+        "node": "^16.10.0"
+    }
+}
