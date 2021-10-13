@@ -7,12 +7,15 @@ let app = express();
 app.use(express.json());
 
 // i want to use a router
-let itemRoute = require("./router/item")
-app.use(itemRoute);
+//let itemRoute = require("./router/item")
+//app.use(itemRoute);
 
+require("./db/db")
 
 let port = process.env.PORT;
 
 app.listen(port, function(){
     console.log("Starting the app server on port", port)
 });
+
+module.exports=express
